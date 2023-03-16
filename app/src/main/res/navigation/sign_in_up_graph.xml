@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sign_in_up_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.adi.startoonlabs.signinup.fragments.SignInFragment"
+        android:label="SignInFragment" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_otpVerificationFragment"
+            app:destination="@id/otpVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.adi.startoonlabs.signinup.fragments.SignUpFragment"
+        android:label="SignUpFragment" />
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.adi.startoonlabs.signinup.fragments.OtpVerificationFragment"
+        android:label="OtpVerificationFragment" />
+</navigation>

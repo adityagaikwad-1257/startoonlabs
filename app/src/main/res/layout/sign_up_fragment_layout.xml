@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:background="@color/color_primary"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="30dp"
+                android:contentDescription="@string/back_arrow"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_back_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="120dp"
+                android:text="@string/sign_up"
+                android:textAppearance="@style/TextAppearance.Material3.DisplaySmall"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp">
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:autofillHints=""
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sign_up_et_bg"
+                    android:drawableStart="@drawable/ic_user_outline"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/user_name"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="20dp"
+                    android:textColorHint="@android:color/darker_gray"
+                    app:drawableTint="@android:color/darker_gray"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/mobile_number"
+                    android:autofillHints=""
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sign_up_et_bg"
+                    android:drawableStart="@drawable/at_the_rate"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/mobile_hint"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="20dp"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textColor="@color/black"
+                    app:drawableTint="@android:color/darker_gray"
+                    android:layout_below="@id/user_name"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/sign_up_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/next_btn"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/user_name"
+                    android:layout_marginStart="-25dp"
+                    app:backgroundTint="@color/orange"
+                    android:src="@drawable/ic_next_arrow"
+                    app:tint="@color/white"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/error_msg"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                tools:text="error message here"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

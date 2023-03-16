@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Startoon Labs</string>
+    <string name="login">Login</string>
+    <string name="mobile_hint">Mobile no.</string>
+    <string name="sign_in_button">sign_in_button</string>
+    <string name="tnc_text"><![CDATA[By Signing up, you agree to T&C]]></string>
+    <string name="sign_up"> Sign Up</string>
+    <string name="enter_code">Enter code</string>
+    <string name="new_user">New User?</string>
+    <string name="user_name">User Name</string>
+    <string name="login_image">Login Image</string>
+    <string name="next_btn">next_btn</string>
+    <string name="back_arrow">back_arrow</string>
+    <string name="sms_sent_on">We have sent you an SMS on</string>
+    <string name="with_6_digit_verification_code">with 6 digit verification code.</string>
+    <string name="otp_hint">*</string>
+    <string name="submit">Submit</string>
+    <string name="did_not_receive_the_code">Did not receive the code?</string>
+    <string name="user_already_exist_error">User with Phone number already exist.\nTry signing in.</string>
+    <string name="sign_up_error_msg">Something went wrong.\nTry again later.</string>
+    <string name="user_name_label">User name:</string>
+    <string name="phone_number_label">Phone number:</string>
+    <string name="sign_out">sign out</string>
+</resources>
